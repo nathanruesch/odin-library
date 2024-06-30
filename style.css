@@ -1,0 +1,101 @@
+body {
+    background-color: antiquewhite;
+}
+
+#new-book-button {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 240px;
+    height: 60px;
+    background-color: lightgray;
+    font-size: 1.2em;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    width: 70vw;
+    margin: auto;
+    height: calc(100vh - 10px);
+    grid-template-rows: auto auto auto auto;
+}
+
+.library-book {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    padding: 0px 5px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.library-book-title {
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.library-book-author {
+    font-style: italic;
+    text-align: center;
+    margin-top: -10%;
+}
+
+.library-book-pages {
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    bottom: 20;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.library-book-read {
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.library-book-remove-button {
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    bottom: 20;
+    width: 30px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    background-color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.library-book-change-read {
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 55px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    background-color: white;
+}
+
+#new-book-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    margin-bottom: 10px;
+}
+
+#form-dialog {
+    background-color: lightgray;
+    margin: auto;
+    margin-top: 20px;
+}
