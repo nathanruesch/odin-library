@@ -159,7 +159,7 @@ function generateTestData() {
 }
 
 closeDialog();
-generateTestData();
+//generateTestData();
 
 newBookSubmit.addEventListener("click", addBookToLibraryInput, false);
 newBookButton.addEventListener("click", openDialog, false);
